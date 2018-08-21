@@ -5,13 +5,13 @@ function getIt(){
 }
 
 function frameIt(){
-  $(document).on('load', function{
-    img.classList.add("tasty");
+  $('img').on('load', function{
+    $('img').addClass("tasty");
   });
 }
 
 function pressIt(){
-  $(document).on('keydown', function(){
+  $('input').on('keydown', function(){
     if(key.which == 70){
       alert("G was pressed");
     }
